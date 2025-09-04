@@ -1,0 +1,205 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header {
+  background: #f7ff02;
+  color: #000000;
+  padding: 1rem 0;
+
+  /* to get transparent and cicular header */
+  opacity: 70%;
+  margin: 1rem;
+  border-radius: 25px;
+
+  /* to get fixed header use below code */
+  position: fixed;
+  top: 0;
+  left: 0px;
+  width: calc(100% - 2rem);
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+nav .logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+nav .nav-links {
+  list-style: none;
+  display: flex;
+}
+
+nav .nav-links li {
+  margin-left: 20px;
+}
+
+nav .nav-links a {
+  color: #000000;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+nav .nav-links a:hover,
+nav .nav-links a.active {
+  color: #ff0000;
+  text-decoration: underline;
+}
+
+.hero {
+  background: #007bff;
+  background-image: url(hero-banner.jpg);
+  background-size: cover;
+  color: #fff;
+  text-align: center;
+  padding: 100px 20px;
+  height: 75vh;
+}
+
+.hero h1 {
+  font-size: 4rem;
+}
+
+.hero h2 {
+  font-size: 6rem;
+}
+
+.hero p {
+  font-size: 1.2rem;
+}
+
+.hero button {
+  background: #fff;
+  color: #007bff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+/* .service-item img {
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  display: block;
+  border-radius: 5px;
+  box-shadow: insent 0 4px 8px rgba(255, 255, 255, 0.5)
+} */
+
+section {
+  text-align: justify;
+}
+
+.about,
+.contact {
+  padding: 50px 20px;
+  background-color: #ccc;
+  margin: 25px;
+  border-radius: 25px;
+  color: #fff;
+  background-color: #ad0a0a92;
+  box-shadow: inset 8px -12px rgb(255, 255, 255, 0.5);
+  /* justify-content: center; */
+}
+
+.services {
+  padding: 50px 20px;
+}
+
+/* fonts */
+.about h2,
+.services h2,
+.contact h2 {
+  text-align: left;
+  margin: 2px;
+  font-size: xx-large;
+}
+
+.about p,
+.services p,
+.contact p {
+  margin: 2px;
+  font-size: large;
+}
+
+/* service CSS */
+/* justify-content: space-around; */
+/* flex-wrap: wrap; */
+.service-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.service-list div {
+  display: inline-block;
+  width: fit-content;
+}
+
+.service-item {
+  background-color: #ccc;
+  color: #fff;
+  padding: 20px;
+  margin: 10px;
+  border-radius: 5px;
+  text-align: center;
+  align-items: center;
+  height: 200px;
+  transition: transform 0.2s ease, width 0.3s;
+  cursor: pointer;
+}
+
+.service-item:hover {
+  transform: scale(1.02);
+}
+
+.no-bullets {
+  list-style-type: none;
+  padding: 0;
+  display: none;
+}
+
+.contact form {
+  display: flex;
+  flex-direction: column;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.contact form input,
+.contact form textarea {
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.contact form button {
+  background: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
+
+footer {
+  background: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+  margin-top: 50px;
+}
